@@ -6,7 +6,19 @@ module.exports = [
     path: '/usuarios', 
     handler: usuariosController.getAllUsuarios 
   },
+  
+  {
+    method: 'POST',
+    path: '/cadastro',
+    handler: usuariosController.createUsuario
+  },
 
+  {
+    method: 'POST',
+    path: '/login',
+    handler: usuariosController.loginUsuario
+  },
+  
   { 
     method: 'GET', 
     path: '/usuarios/{id}', 
